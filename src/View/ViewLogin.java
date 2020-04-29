@@ -9,21 +9,21 @@ public class ViewLogin extends JFrame {
     JLabel label1 = new JLabel("SIGN UP");
 
     JLabel lEmail = new JLabel("Email :");
-    JTextField tfEmail = new JTextField();
+    public JTextField tfEmail = new JTextField();
     JLabel lPassword = new JLabel("Password");
-    JTextField tfPassword = new JTextField();
+    public JPasswordField tfPassword = new JPasswordField();
 
 
     JLabel lEmail1 = new JLabel("Email :");
-    JTextField tfEmail1 = new JTextField();
+    public JTextField tfEmail1 = new JTextField();
     JLabel lName = new JLabel("Name :");
-    JTextField tfName = new JTextField();
+    public JTextField tfName = new JTextField();
     JLabel lNoHp = new JLabel("No Hp :");
-    JTextField tfNoHp = new JTextField();
+    public  JTextField tfNoHp = new JTextField();
     JLabel lAddress = new JLabel("Address :");
-    JTextField tfAddress = new JTextField();
+    public JTextField tfAddress = new JTextField();
     JLabel lPassword1 = new JLabel("Password :");
-    JTextField tfPassword1 = new JTextField();
+    public JPasswordField tfPassword1 = new JPasswordField();
 
     public JButton bSignIn = new JButton("SIGN IN");
     public JButton bSignUp = new JButton("SIGN UP");
