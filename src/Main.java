@@ -1,3 +1,6 @@
 public class Main {
-    MVCLogin mvcLogin = new MVCLogin();
+
+    public static void main(String[] args) {
+        new MVCLogin();
+    }
 }
