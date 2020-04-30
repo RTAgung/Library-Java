@@ -1,5 +1,8 @@
 package Controller;
 
+import Main.MVCMenuAdmin;
+import Main.MVCMenuMember;
+import Main.Member;
 import Model.ModelSignIn;
 import View.ViewLogin;
 
@@ -44,7 +47,8 @@ public class ControllerSignIn implements ActionListener {
 
         if (email.equals("admin") && password.equals("admin123")){
             viewLogin.setVisible(false);
-            //masuk admin
+            JOptionPane.showMessageDialog(null, "Berhasil Masuk!");
+            MVCMenuAdmin mvcMenuAdmin = new MVCMenuAdmin();
         } else {
             if (email.equals("") || password.equals("")) {
                 JOptionPane.showMessageDialog(null, "Data Tidak Boleh Kosong");
@@ -52,7 +56,11 @@ public class ControllerSignIn implements ActionListener {
                 if (modelSignIn.getCountForSignIn(email, password) == 1) {
                     JOptionPane.showMessageDialog(null, "Berhasil Masuk!");
                     viewLogin.setVisible(false);
-                    //masuk member
+
+                    String data[] = modelSignIn.getMember(email, password);
+                    Member member = new Member(data[0], data[1]);
+
+                    MVCMenuMember mvcMenuMember = new MVCMenuMember(member);
                 } else {
                     JOptionPane.showMessageDialog(null, "Email / Password Salah");
                 }
