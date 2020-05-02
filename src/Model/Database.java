@@ -16,10 +16,10 @@ public class Database {
             try {
                 Class.forName(JDBC_DRIVER);
                 connection =  DriverManager.getConnection(DBurl,DBusername, DBpassword);
-                System.err.println("Koneksi Berhasil");
+                System.out.println("Koneksi Berhasil");
             } catch (Exception ex) {
                 JOptionPane.showMessageDialog(null, ex.getStackTrace());
-                System.err.println("Koneksi Gagal " + ex.getMessage());
+                System.out.println("Koneksi Gagal " + ex.getMessage());
             }
         }
         return connection;

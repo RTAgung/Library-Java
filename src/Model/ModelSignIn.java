@@ -20,7 +20,7 @@ public class ModelSignIn {
             }
         } catch (SQLException e) {
             e.printStackTrace();
-            System.err.println(e.getMessage());
+            System.out.println(e.getMessage());
         }
         return data;
     }
@@ -36,7 +36,7 @@ public class ModelSignIn {
                 count = resultSet.getInt("count");
         } catch (SQLException e) {
             e.printStackTrace();
-            System.err.println(e.getMessage());
+            System.out.println(e.getMessage());
         }
         return count;
     }
@@ -52,7 +52,7 @@ public class ModelSignIn {
                 count = resultSet.getInt("count");
         } catch (SQLException e) {
             e.printStackTrace();
-            System.err.println(e.getMessage());
+            System.out.println(e.getMessage());
         }
         return count;
     }
@@ -69,9 +69,8 @@ public class ModelSignIn {
             }
         } catch (SQLException e) {
             e.printStackTrace();
-            System.err.println(e.getMessage());
+            System.out.println(e.getMessage());
         }
         return count;
     }
-
 }

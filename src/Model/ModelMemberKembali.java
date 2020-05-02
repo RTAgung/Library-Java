@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class ModelMemberKembali {
-    Statement statement;
+    private Statement statement;
     Member member;
 
     public ModelMemberKembali(Member member) {
@@ -20,7 +20,7 @@ public class ModelMemberKembali {
         int total = 0;
         try {
             String query = "SELECT COUNT(*) as Count FROM kartu_pinjam k JOIN books b " +
-                    "ON k.BookId = b.BookId WHERE k.Email = '" + member.getEmail() + "'";
+                    "ON k.BookId = b.BookId WHERE k.Email = '" + member.getEmail() + "' AND k.Status = 'dipinjam'";
             statement = Database.getConnection().createStatement();
             ResultSet resultSet = statement.executeQuery(query);
             if (resultSet.next()){
@@ -28,16 +28,17 @@ public class ModelMemberKembali {
             }
         } catch (SQLException e) {
             e.printStackTrace();
-            System.err.println(e.getMessage());
+            System.out.println(e.getMessage());
         }
         return total;
     }
 
     public String[][] getAllBooks(){
-        String[][] data = new String[getCountBooks()][6];
+        String[][] data = new String[getCountBooks()][5];
         try{
             String query = "SELECT * FROM kartu_pinjam k JOIN books b " +
-                    "ON k.BookId = b.BookId WHERE k.Email = '" + member.getEmail() + "'";
+                    "ON k.BookId = b.BookId WHERE k.Email = '" + member.getEmail() + "' AND k.Status = 'dipinjam'" +
+                    "ORDER BY b.BookTitle ASC";
             statement = Database.getConnection().createStatement();
             ResultSet resultSet = statement.executeQuery(query);
             int i = 0;
@@ -46,13 +47,12 @@ public class ModelMemberKembali {
                 data[i][1] = "" + (i+1);
                 data[i][2] = resultSet.getString("BookTitle");
                 data[i][3] = resultSet.getString("Author");
-                data[i][4] = resultSet.getString("Genre");
-                data[i][5] = resultSet.getString("TglPinjam");
+                data[i][4] = resultSet.getString("TglPinjam");
                 i++;
             }
         } catch (SQLException e) {
             e.printStackTrace();
-            System.err.println(e.getMessage());
+            System.out.println(e.getMessage());
         }
         return data;
     }
@@ -73,12 +73,12 @@ public class ModelMemberKembali {
             result = 1;
         } catch (SQLException e) {
             e.printStackTrace();
-            System.err.println(e.getMessage());
+            System.out.println(e.getMessage());
         }
         return result;
     }
 
-    public void updateBooks(String noCard){
+    private void updateBooks(String noCard){
         try {
             String bookId = "0";
             String query = "SELECT b.BookId as BookId FROM kartu_pinjam k JOIN books b " +
@@ -92,13 +92,47 @@ public class ModelMemberKembali {
             query = "SELECT Stock FROM books WHERE BookId = " + bookId;
             statement =  Database.getConnection().createStatement();
             resultSet = statement.executeQuery(query);
-            int sum = resultSet.getInt("Stock");
+            int sum = 0;
+            if (resultSet.next())
+                sum = resultSet.getInt("Stock");
             sum++;
             query = "UPDATE books SET Stock = " + sum + " WHERE BookId = '" + bookId + "'";
             statement.executeUpdate(query);
         } catch (SQLException e) {
             e.printStackTrace();
-            System.err.println(e.getMessage());
+            System.out.println(e.getMessage());
+        }
+    }
+
+    public String[][] getBookSearch(String book){
+        try{
+            int sumOfData = 0;
+            int getSumOfData = 0;
+            String query = "SELECT * FROM kartu_pinjam k JOIN books b " +
+                    "ON k.BookId = b.BookId WHERE k.Email = '" + member.getEmail() + "' " +
+                    "AND k.Status = 'dipinjam' AND b.BookTitle LIKE '%" + book + "%' " +
+                    "ORDER BY b.BookTitle ASC";
+            statement = Database.getConnection().createStatement();
+            ResultSet resultSet = statement.executeQuery(query);
+            while (resultSet.next()){
+                getSumOfData++;
+            }
+
+            String[][] data = new String[getSumOfData][5];
+            resultSet = statement.executeQuery(query);
+            while (resultSet.next()){
+                data[sumOfData][0] = resultSet.getString("NoCard");
+                data[sumOfData][1] = "" + (sumOfData+1);
+                data[sumOfData][2] = resultSet.getString("BookTitle");
+                data[sumOfData][3] = resultSet.getString("Author");
+                data[sumOfData][4] = resultSet.getString("TglPinjam");
+                sumOfData++;
+            }
+            return data;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            System.out.println(e.getMessage());
+            return null;
         }
     }
 }

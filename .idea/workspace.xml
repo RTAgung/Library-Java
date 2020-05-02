@@ -2,11 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9f93fcf-fdb1-4025-be13-cb6b1406e53b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Model/ModelMemberKembali.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/ModelMemberPinjam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/ControllerMemberKembali.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/ControllerMemberPinjam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main/MVCAdminBook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/ModelAdminBook.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Library/Main/MVCAdminBuku.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Library/Main/MVCMemberHome.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Library/Main/MVCMemberHome.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Library/Main/MVCMemberKembali.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Library/Main/MVCMemberKembali.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Library/Main/MVCMemberPinjam.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Library/Main/MVCMemberPinjam.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Library/Main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Library/Main/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Library/View/ViewBuku.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/MVCAdminBuku.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/MVCMemberHome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/MVCMemberHome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/MVCMemberKembali.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/MVCMemberKembali.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/MVCMemberPinjam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/MVCMemberPinjam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/ModelMemberKembali.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/ModelMemberKembali.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/ModelMemberPinjam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/ModelMemberPinjam.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/ModelSignIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/ModelSignIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/ViewBuku.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +56,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/test" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Library" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -76,38 +92,42 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="530" y="48" key="#com.intellij.ide.util.MemberChooser" timestamp="1588319715400">
+    <state x="530" y="48" key="#com.intellij.ide.util.MemberChooser" timestamp="1588394285116">
       <screen x="0" y="0" width="1536" height="832" />
     </state>
-    <state x="530" y="48" key="#com.intellij.ide.util.MemberChooser/0.0.1536.832@0.0.1536.832" timestamp="1588319715400" />
-    <state x="499" y="113" key="FileChooserDialogImpl" timestamp="1588312757538">
+    <state x="530" y="48" key="#com.intellij.ide.util.MemberChooser/0.0.1536.832@0.0.1536.832" timestamp="1588394285116" />
+    <state x="201" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1588395444903">
       <screen x="0" y="0" width="1536" height="832" />
     </state>
-    <state x="499" y="113" key="FileChooserDialogImpl/0.0.1536.832@0.0.1536.832" timestamp="1588312757538" />
-    <state width="1481" height="116" key="GridCell.Tab.0.bottom" timestamp="1588243025395">
+    <state x="201" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.832@0.0.1536.832" timestamp="1588395444903" />
+    <state x="499" y="113" key="FileChooserDialogImpl" timestamp="1588339599496">
       <screen x="0" y="0" width="1536" height="832" />
     </state>
-    <state width="1481" height="116" key="GridCell.Tab.0.bottom/0.0.1536.832@0.0.1536.832" timestamp="1588243025395" />
-    <state width="1481" height="116" key="GridCell.Tab.0.center" timestamp="1588243025395">
+    <state x="499" y="113" key="FileChooserDialogImpl/0.0.1536.832@0.0.1536.832" timestamp="1588339599496" />
+    <state width="1481" height="116" key="GridCell.Tab.0.bottom" timestamp="1588395870520">
       <screen x="0" y="0" width="1536" height="832" />
     </state>
-    <state width="1481" height="116" key="GridCell.Tab.0.center/0.0.1536.832@0.0.1536.832" timestamp="1588243025395" />
-    <state width="1481" height="116" key="GridCell.Tab.0.left" timestamp="1588243025395">
+    <state width="1481" height="116" key="GridCell.Tab.0.bottom/0.0.1536.832@0.0.1536.832" timestamp="1588395870520" />
+    <state width="1481" height="116" key="GridCell.Tab.0.center" timestamp="1588395870520">
       <screen x="0" y="0" width="1536" height="832" />
     </state>
-    <state width="1481" height="116" key="GridCell.Tab.0.left/0.0.1536.832@0.0.1536.832" timestamp="1588243025395" />
-    <state width="1481" height="116" key="GridCell.Tab.0.right" timestamp="1588243025395">
+    <state width="1481" height="116" key="GridCell.Tab.0.center/0.0.1536.832@0.0.1536.832" timestamp="1588395870520" />
+    <state width="1481" height="116" key="GridCell.Tab.0.left" timestamp="1588395870520">
       <screen x="0" y="0" width="1536" height="832" />
     </state>
-    <state width="1481" height="116" key="GridCell.Tab.0.right/0.0.1536.832@0.0.1536.832" timestamp="1588243025395" />
+    <state width="1481" height="116" key="GridCell.Tab.0.left/0.0.1536.832@0.0.1536.832" timestamp="1588395870520" />
+    <state width="1481" height="116" key="GridCell.Tab.0.right" timestamp="1588395870520">
+      <screen x="0" y="0" width="1536" height="832" />
+    </state>
+    <state width="1481" height="116" key="GridCell.Tab.0.right/0.0.1536.832@0.0.1536.832" timestamp="1588395870520" />
     <state x="121" y="0" key="SettingsEditor" timestamp="1588046847754">
       <screen x="0" y="0" width="1536" height="832" />
     </state>
     <state x="121" y="0" key="SettingsEditor/0.0.1536.832@0.0.1536.832" timestamp="1588046847754" />
-    <state x="379" y="198" key="com.intellij.ide.util.TipDialog" timestamp="1588309413323">
+    <state x="379" y="198" key="com.intellij.ide.util.TipDialog" timestamp="1588390787490">
       <screen x="0" y="0" width="1536" height="832" />
     </state>
-    <state x="379" y="198" key="com.intellij.ide.util.TipDialog/0.0.1536.832@0.0.1536.832" timestamp="1588309413323" />
+    <state x="379" y="198" key="com.intellij.ide.util.TipDialog/0.0.1536.832@0.0.1536.832" timestamp="1588390787490" />
     <state x="423" y="289" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1588046845298">
       <screen x="0" y="0" width="1536" height="832" />
     </state>
