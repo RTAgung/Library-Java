@@ -57,6 +57,6 @@ public class ViewMemberPinjam extends JFrame {
     }
 
     public String getSearch() {
-        return tfSearch.getText().toString();
+        return tfSearch.getText();
     }
 }

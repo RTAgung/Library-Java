@@ -11,30 +11,27 @@ public class ViewAdminBook extends JFrame {
     JLabel lJudulHome = new JLabel("Buku");
 
     JLabel lTitle = new JLabel("TITLE");
-    JTextField tfTitle = new JTextField();
+    public JTextField tfTitle = new JTextField();
     JLabel lAuthor = new JLabel("AUTHOR");
-    JTextField tfAuthor = new JTextField();
+    public JTextField tfAuthor = new JTextField();
     JLabel lGenre = new JLabel("GENRE");
-    JTextField tfGenre = new JTextField();
+    public JTextField tfGenre = new JTextField();
     JLabel lStock = new JLabel("STOK");
-    JTextField tfStock = new JTextField();
-    JTextField tfId = new JTextField();
+    public JTextField tfStock = new JTextField();
 
     JLabel lSearch = new JLabel("SEARCH");
-    JTextField tfSearch = new JTextField();
+    public JTextField tfSearch = new JTextField();
 
-    JButton bInsert = new JButton("INSERT");
-    JButton bUpdate = new JButton("UPDATE");
-    JButton bDelete = new JButton("DELETE");
-    JButton bSearch = new JButton("SEARCH");
-    JButton bRefresh = new JButton("REFRESH");
-    JButton bReset = new JButton("RESET");
+    public JButton bInsert = new JButton("INSERT");
+    public JButton bSearch = new JButton("SEARCH");
+    public JButton bRefresh = new JButton("REFRESH");
+    public JButton bReset = new JButton("RESET");
 
-    JTable table;
-    DefaultTableModel tableModel;
+    public JTable table;
+    public DefaultTableModel tableModel;
     JScrollPane scrollPane;
 
-    Object coloumnName[] = {"#", "Title","Author","Genre","Stok"};
+    public Object coloumnName[] = {"BookId", "#", "Title","Author","Genre","Stok"};
 
     public ViewAdminBook(){
         tableModel = new DefaultTableModel(coloumnName,0);
@@ -45,7 +42,6 @@ public class ViewAdminBook extends JFrame {
         setVisible(true);
         setLayout(null);
         setSize(840, 400);
-
 
         lJudulHome.setFont(font1);
         add(lJudulHome);
@@ -66,8 +62,6 @@ public class ViewAdminBook extends JFrame {
         add(lStock);
         lStock.setBounds(75, 225, 50, 20);
 
-        add(tfId);
-        tfId.setVisible(false);
         add(tfSearch);
         tfSearch.setBounds(130,350,350,20);
         add(tfTitle);
@@ -85,10 +79,6 @@ public class ViewAdminBook extends JFrame {
         bRefresh.setBounds(570,350,100,20);
         add(bInsert);
         bInsert.setBounds(100,280,90,20);
-        add(bUpdate);
-        bUpdate.setBounds(200,280,90,20);
-        add(bDelete);
-        bDelete.setBounds(300,280,90,20);
         add(bReset);
         bReset.setBounds(400,280,90,20);
 
@@ -96,7 +86,6 @@ public class ViewAdminBook extends JFrame {
         setLayout(null);
         setVisible(true);
     }
-    public  String getBookId(){return  tfId.getText();}
     public  String getTitle(){
         return tfTitle.getText();
     }
@@ -108,6 +97,9 @@ public class ViewAdminBook extends JFrame {
     }
     public  String getStock(){
         return tfStock.getText();
+    }
+    public String getSearch() {
+        return tfSearch.getText();
     }
 
 }
