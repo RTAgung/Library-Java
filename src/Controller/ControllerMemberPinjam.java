@@ -65,7 +65,7 @@ public class ControllerMemberPinjam implements ActionListener {
             refreshTable();
     }
 
-    private void refreshTable() {
+    public void refreshTable() {
         viewMemberPinjam.tfSearch.setText("");
         String data[][] = modelMemberPinjam.getAllBooks();
         viewMemberPinjam.table.setModel(new JTable(data, viewMemberPinjam.coloumnName).getModel());

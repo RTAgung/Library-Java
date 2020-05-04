@@ -8,10 +8,13 @@ import View.ViewMemberPinjam;
 public class MVCMemberPinjam {
     Member member;
 
+    public ViewMemberPinjam viewMemberPinjam;
+    public ModelMemberPinjam modelMemberPinjam;
+    public ControllerMemberPinjam controllerMemberPinjam;
     public MVCMemberPinjam(Member member) {
         this.member = member;
-        ViewMemberPinjam viewMemberPinjam = new ViewMemberPinjam();
-        ModelMemberPinjam modelMemberPinjam = new ModelMemberPinjam(member);
-        ControllerMemberPinjam controllerMemberPinjam = new ControllerMemberPinjam(viewMemberPinjam, modelMemberPinjam);
+        viewMemberPinjam = new ViewMemberPinjam();
+        modelMemberPinjam = new ModelMemberPinjam(member);
+        controllerMemberPinjam = new ControllerMemberPinjam(viewMemberPinjam, modelMemberPinjam);
     }
 }

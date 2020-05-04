@@ -5,7 +5,7 @@ import Model.ModelAdminHistory;
 import View.ViewAdminHistory;
 
 public class MVCAdminHistory {
-    ViewAdminHistory viewAdminHistory = new ViewAdminHistory();
-    ModelAdminHistory modelAdminHistory = new ModelAdminHistory();
-    ControllerAdminHistory controllerAdminHistory = new ControllerAdminHistory(viewAdminHistory, modelAdminHistory);
+    public ViewAdminHistory viewAdminHistory = new ViewAdminHistory();
+    public ModelAdminHistory modelAdminHistory = new ModelAdminHistory();
+    public ControllerAdminHistory controllerAdminHistory = new ControllerAdminHistory(viewAdminHistory, modelAdminHistory);
 }

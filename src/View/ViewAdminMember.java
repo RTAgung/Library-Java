@@ -7,7 +7,9 @@ import java.awt.*;
 public class ViewAdminMember extends JFrame {
     Font font1 = new Font(Font.MONOSPACED, Font.BOLD, 45);//membuat font
 
-    JLabel lJudulHome = new JLabel("USER");
+    public JPanel pMember = new JPanel();
+
+    JLabel lJudulHome = new JLabel("Member");
 
     JLabel lEmail = new JLabel("Email");
     public JTextField tfEmail = new JTextField();
@@ -26,9 +28,9 @@ public class ViewAdminMember extends JFrame {
 
     public JButton bUpdate = new JButton("UPDATE");
     public JButton bDelete = new JButton("DELETE");
+    public JButton bReset = new JButton("RESET");
     public JButton bSearch = new JButton("SEARCH");
     public JButton bRefresh = new JButton("REFRESH");
-
 
     public JTable table;
     public DefaultTableModel tableModel;
@@ -41,57 +43,54 @@ public class ViewAdminMember extends JFrame {
         table = new JTable(tableModel);
         scrollPane = new JScrollPane(table);
 
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setVisible(true);
-        setLayout(null);
-        setSize(840, 400);
+        pMember.setLayout(null);
+        pMember.setSize(800,670);
 
         lJudulHome.setFont(font1);
-        add(lJudulHome);
+        pMember.add(lJudulHome);
         lJudulHome.setBounds(40, 40, 300, 50);
 
-        add(scrollPane);
+        pMember.add(scrollPane);
         scrollPane.setBounds(75, 400, 600, 200);
         scrollPane.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
 
-        add(lSearch);
+        pMember.add(lSearch);
         lSearch.setBounds(75,350,80,20);
-        add(lEmail);
+        pMember.add(lEmail);
         lEmail.setBounds(75, 100, 160, 50);
-        add(lPassword);
+        pMember.add(lPassword);
         lPassword.setBounds(75, 135, 160, 50);
-        add(lName);
+        pMember.add(lName);
         lName.setBounds(75, 170, 160, 50);
-        add(lAddress);
+        pMember.add(lAddress);
         lAddress.setBounds(75, 225, 50, 20);
-        add(lNoHp);
+        pMember.add(lNoHp);
         lNoHp.setBounds(75, 245,160,50);
 
-        add(tfSearch);
+        pMember.add(tfSearch);
         tfSearch.setBounds(130,350,350,20);
-        add(tfEmail);
+        pMember.add(tfEmail);
         tfEmail.setBounds(150,115,350,20);
-        add(tfPassword);
+        pMember.add(tfPassword);
         tfPassword.setBounds(150,150,350,20);
-        add(tfName);
+        pMember.add(tfName);
         tfName.setBounds(150,185,350,20);
-        add(tfAddress);
+        pMember.add(tfAddress);
         tfAddress.setBounds(150,225,350,20);
-        add(tfNoHp);
+        pMember.add(tfNoHp);
         tfNoHp.setBounds(150,260,350,20);
 
-        add(bSearch);
+        pMember.add(bSearch);
         bSearch.setBounds(480,350,90,20);
-        add(bRefresh);
+        pMember.add(bRefresh);
         bRefresh.setBounds(570,350,100,20);
-        add(bUpdate);
+        pMember.add(bUpdate);
         bUpdate.setBounds(150,300,90,20);
-        add(bDelete);
+        pMember.add(bDelete);
         bDelete.setBounds(400,300,90,20);
+        pMember.add(bReset);
+        bReset.setBounds(280, 300, 90, 20);
 
-        setBounds(305, 0, 775, 800);
-        setLayout(null);
-        setVisible(true);
     }
     public  String getEmail(){
         return tfEmail.getText();

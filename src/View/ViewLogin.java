@@ -13,7 +13,6 @@ public class ViewLogin extends JFrame {
     JLabel lPassword = new JLabel("Password");
     public JPasswordField tfPassword = new JPasswordField();
 
-
     JLabel lEmail1 = new JLabel("Email :");
     public JTextField tfEmail1 = new JTextField();
     JLabel lName = new JLabel("Name :");
@@ -31,7 +30,10 @@ public class ViewLogin extends JFrame {
     public JButton bBatal = new JButton("BATAL");
 
     public ViewLogin(){
+
         setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setLocation(450,200);
+        setResizable(false);
         setVisible(true);
         setLayout(null);
         setSize(600, 500);

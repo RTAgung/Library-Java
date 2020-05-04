@@ -8,6 +8,8 @@ public class ViewMemberKembali extends JFrame {
     Font font = new Font(Font.MONOSPACED, Font.BOLD, 45);//membuat font
     Font font1 = new Font(Font.MONOSPACED, Font.BOLD, 17);
 
+    public JPanel pKembali = new JPanel();
+
     JLabel lJudulHome = new JLabel("Buku Kembali");
     JLabel lJudul1 = new JLabel("Klik Buku yang ingin di kembalikan");
 
@@ -28,31 +30,29 @@ public class ViewMemberKembali extends JFrame {
         table = new JTable(tableModel);
         scrollPane = new JScrollPane(table);
 
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setVisible(true);
-        setLayout(null);
-        setSize(840, 600);
+        pKembali.setLayout(null);
+        pKembali.setSize(800,670);
 
         lJudulHome.setFont(font);
-        add(lJudulHome);
+        pKembali.add(lJudulHome);
         lJudulHome.setBounds(40, 40, 500, 50);
 
         lJudul1.setFont(font1);
-        add(lJudul1);
+        pKembali.add(lJudul1);
         lJudul1.setBounds(80, 80, 500,50);
 
-        add(scrollPane);
+        pKembali.add(scrollPane);
         scrollPane.setBounds(75, 300, 600, 200);
         scrollPane.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
 
-        add(lSearch);
+        pKembali.add(lSearch);
         lSearch.setBounds(75,200,80,20);
-        add(tfSearch);
+        pKembali.add(tfSearch);
         tfSearch.setBounds(130,200,350,20);
 
-        add(bSearch);
+        pKembali.add(bSearch);
         bSearch.setBounds(480,200,90,20);
-        add(bRefresh);
+        pKembali.add(bRefresh);
         bRefresh.setBounds(570,200,100,20);
     }
 

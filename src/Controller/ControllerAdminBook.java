@@ -80,6 +80,23 @@ public class ControllerAdminBook implements ActionListener {
         }
     }
 
+    public void refreshTable() {
+        viewAdminBook.tfSearch.setText("");
+        String data[][] = modelAdminBook.getAllBooks();
+        viewAdminBook.table.setModel(new JTable(data, viewAdminBook.coloumnName).getModel());
+
+        viewAdminBook.table.getColumnModel().getColumn(0).setMinWidth(0);
+        viewAdminBook.table.getColumnModel().getColumn(0).setMaxWidth(0);
+        viewAdminBook.table.getColumnModel().getColumn(0).setWidth(0);
+    }
+
+    public void reset() {
+        viewAdminBook.tfTitle.setText("");
+        viewAdminBook.tfAuthor.setText("");
+        viewAdminBook.tfGenre.setText("");
+        viewAdminBook.tfStock.setText("");
+    }
+
     private void updateBook(String bookId, String bookTitle, String author, String genre, String stock) {
         String newBookTitle = JOptionPane.showInputDialog(null, "Update Title", bookTitle);
         newBookTitle = (newBookTitle == null)? bookTitle : newBookTitle;
@@ -131,22 +148,5 @@ public class ControllerAdminBook implements ActionListener {
         } catch (Exception ex){
             JOptionPane.showMessageDialog(null, "Stock Harus Diisi Dengan Angka");
         }
-    }
-
-    private void reset() {
-        viewAdminBook.tfTitle.setText("");
-        viewAdminBook.tfAuthor.setText("");
-        viewAdminBook.tfGenre.setText("");
-        viewAdminBook.tfStock.setText("");
-    }
-
-    private void refreshTable() {
-        viewAdminBook.tfSearch.setText("");
-        String data[][] = modelAdminBook.getAllBooks();
-        viewAdminBook.table.setModel(new JTable(data, viewAdminBook.coloumnName).getModel());
-
-        viewAdminBook.table.getColumnModel().getColumn(0).setMinWidth(0);
-        viewAdminBook.table.getColumnModel().getColumn(0).setMaxWidth(0);
-        viewAdminBook.table.getColumnModel().getColumn(0).setWidth(0);
     }
 }

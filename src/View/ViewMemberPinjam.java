@@ -8,6 +8,8 @@ public class ViewMemberPinjam extends JFrame {
     Font font = new Font(Font.MONOSPACED, Font.BOLD, 45);//membuat font
     Font font1 = new Font(Font.MONOSPACED, Font.BOLD, 17);
 
+    public JPanel pPinjam = new JPanel();
+
     JLabel lJudulHome = new JLabel("Buku Pinjam");
     JLabel lJudul1 = new JLabel("Klik Buku yang ingin di pinjam");
 
@@ -28,31 +30,29 @@ public class ViewMemberPinjam extends JFrame {
         table = new JTable(tableModel);
         scrollPane = new JScrollPane(table);
 
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setVisible(true);
-        setLayout(null);
-        setSize(840, 600);
+        pPinjam.setLayout(null);
+        pPinjam.setSize(800,670);
 
         lJudulHome.setFont(font);
-        add(lJudulHome);
+        pPinjam.add(lJudulHome);
         lJudulHome.setBounds(40, 40, 500, 50);
 
         lJudul1.setFont(font1);
-        add(lJudul1);
+        pPinjam.add(lJudul1);
         lJudul1.setBounds(80, 80, 500,50);
 
-        add(scrollPane);
+        pPinjam.add(scrollPane);
         scrollPane.setBounds(75, 300, 600, 200);
         scrollPane.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
 
-        add(lSearch);
+        pPinjam.add(lSearch);
         lSearch.setBounds(75,200,80,20);
-        add(tfSearch);
+        pPinjam.add(tfSearch);
         tfSearch.setBounds(130,200,350,20);
 
-        add(bSearch);
+        pPinjam.add(bSearch);
         bSearch.setBounds(480,200,90,20);
-        add(bRefresh);
+        pPinjam.add(bRefresh);
         bRefresh.setBounds(570,200,100,20);
     }
 

@@ -66,7 +66,7 @@ public class ControllerMemberKembali implements ActionListener {
             refreshTable();
     }
 
-    private void refreshTable() {
+    public void refreshTable() {
         viewMemberKembali.tfSearch.setText("");
         String data[][] = modelMemberKembali.getAllBooks();
         viewMemberKembali.table.setModel(new JTable(data, viewMemberKembali.coloumnName).getModel());

@@ -25,6 +25,7 @@ public class ControllerAdminMember implements ActionListener {
         viewAdminMember.bDelete.addActionListener(this);
         viewAdminMember.bSearch.addActionListener(this);
         viewAdminMember.bRefresh.addActionListener(this);
+        viewAdminMember.bReset.addActionListener(this);
 
         viewAdminMember.table.addMouseListener(new MouseAdapter() {
             @Override
@@ -74,6 +75,8 @@ public class ControllerAdminMember implements ActionListener {
             }
             refreshTable();
             reset();
+        } else if (e.getSource() == viewAdminMember.bReset){
+            reset();
         } else if (e.getSource() == viewAdminMember.bSearch){
             String member = viewAdminMember.getSearch();
             String data[][] = modelAdminMember.getMemberSearch(member);
@@ -82,7 +85,7 @@ public class ControllerAdminMember implements ActionListener {
             refreshTable();
     }
 
-    private void reset() {
+    public void reset() {
         viewAdminMember.tfNoHp.setText("");
         viewAdminMember.tfAddress.setText("");
         viewAdminMember.tfName.setText("");
@@ -90,7 +93,7 @@ public class ControllerAdminMember implements ActionListener {
         viewAdminMember.tfEmail.setText("");
     }
 
-    private void refreshTable() {
+    public void refreshTable() {
         viewAdminMember.tfSearch.setText("");
         String data[][] = modelAdminMember.getAllMembers();
         viewAdminMember.table.setModel(new JTable(data, viewAdminMember.coloumnName).getModel());

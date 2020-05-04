@@ -34,7 +34,7 @@ public class ControllerAdminHistory implements ActionListener {
             refreshTable();
     }
 
-    private void refreshTable() {
+    public  void refreshTable() {
         viewAdminHistory.tfSearch.setText("");
         String data[][] = modelAdminHistory.getAllBooks();
         viewAdminHistory.table.setModel(new JTable(data, viewAdminHistory.coloumnName).getModel());

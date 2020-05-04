@@ -8,6 +8,8 @@ public class ViewAdminBook extends JFrame {
 
     Font font1 = new Font(Font.MONOSPACED, Font.BOLD, 45);//membuat font
 
+    public JPanel pBook = new JPanel();
+
     JLabel lJudulHome = new JLabel("Buku");
 
     JLabel lTitle = new JLabel("TITLE");
@@ -38,53 +40,48 @@ public class ViewAdminBook extends JFrame {
         table = new JTable(tableModel);
         scrollPane = new JScrollPane(table);
 
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setVisible(true);
-        setLayout(null);
-        setSize(840, 400);
+        pBook.setLayout(null);
+        pBook.setSize(800,670);
 
         lJudulHome.setFont(font1);
-        add(lJudulHome);
+        pBook.add(lJudulHome);
         lJudulHome.setBounds(40, 40, 300, 50);
 
-        add(scrollPane);
+        pBook.add(scrollPane);
         scrollPane.setBounds(75, 400, 600, 200);
         scrollPane.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
 
-        add(lSearch);
+        pBook.add(lSearch);
         lSearch.setBounds(75,350,80,20);
-        add(lTitle);
+        pBook.add(lTitle);
         lTitle.setBounds(75, 100, 160, 50);
-        add(lAuthor);
+        pBook.add(lAuthor);
         lAuthor.setBounds(75, 135, 160, 50);
-        add(lGenre);
+        pBook.add(lGenre);
         lGenre.setBounds(75, 170, 160, 50);
-        add(lStock);
+        pBook.add(lStock);
         lStock.setBounds(75, 225, 50, 20);
 
-        add(tfSearch);
+        pBook.add(tfSearch);
         tfSearch.setBounds(130,350,350,20);
-        add(tfTitle);
+        pBook.add(tfTitle);
         tfTitle.setBounds(130,115,350,20);
-        add(tfAuthor);
+        pBook.add(tfAuthor);
         tfAuthor.setBounds(130,150,350,20);
-        add(tfGenre);
+        pBook.add(tfGenre);
         tfGenre.setBounds(130,185,350,20);
-        add(tfStock);
+        pBook.add(tfStock);
         tfStock.setBounds(130,225,350,20);
 
-        add(bSearch);
+        pBook.add(bSearch);
         bSearch.setBounds(480,350,90,20);
-        add(bRefresh);
+        pBook.add(bRefresh);
         bRefresh.setBounds(570,350,100,20);
-        add(bInsert);
+        pBook.add(bInsert);
         bInsert.setBounds(100,280,90,20);
-        add(bReset);
+        pBook.add(bReset);
         bReset.setBounds(400,280,90,20);
 
-        setBounds(305, 0, 775, 800);
-        setLayout(null);
-        setVisible(true);
     }
     public  String getTitle(){
         return tfTitle.getText();
