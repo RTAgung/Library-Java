@@ -46,8 +46,8 @@ public class ControllerSignIn implements ActionListener {
         String password = viewLogin.getPassword();
 
         if (email.equals("admin") && password.equals("admin123")){
-            viewLogin.setVisible(false);
             JOptionPane.showMessageDialog(null, "Berhasil Masuk!");
+            viewLogin.setVisible(false);
             MVCMenuAdmin mvcMenuAdmin = new MVCMenuAdmin();
         } else {
             if (email.equals("") || password.equals("")) {

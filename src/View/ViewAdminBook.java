@@ -7,18 +7,20 @@ import java.awt.*;
 public class ViewAdminBook extends JFrame {
 
     Font font1 = new Font(Font.MONOSPACED, Font.BOLD, 45);//membuat font
+    Font font2 = new Font(Font.MONOSPACED, Font.BOLD, 17);
 
     public JPanel pBook = new JPanel();
 
     JLabel lJudulHome = new JLabel("Buku");
+    JLabel lJudul1 = new JLabel("NB: Klik Tabel Yang Dicari Jika ingin Update/Delete ");
 
-    JLabel lTitle = new JLabel("TITLE");
+    JLabel lTitle = new JLabel("Title");
     public JTextField tfTitle = new JTextField();
-    JLabel lAuthor = new JLabel("AUTHOR");
+    JLabel lAuthor = new JLabel("Author");
     public JTextField tfAuthor = new JTextField();
-    JLabel lGenre = new JLabel("GENRE");
+    JLabel lGenre = new JLabel("Genre");
     public JTextField tfGenre = new JTextField();
-    JLabel lStock = new JLabel("STOK");
+    JLabel lStock = new JLabel("Stok");
     public JTextField tfStock = new JTextField();
 
     JLabel lSearch = new JLabel("SEARCH");
@@ -45,10 +47,14 @@ public class ViewAdminBook extends JFrame {
 
         lJudulHome.setFont(font1);
         pBook.add(lJudulHome);
-        lJudulHome.setBounds(40, 40, 300, 50);
+        lJudulHome.setBounds(40, 50, 300, 50);
+
+        lJudul1.setFont(font2);
+        pBook.add(lJudul1);
+        lJudul1.setBounds(75, 625, 600, 50);
 
         pBook.add(scrollPane);
-        scrollPane.setBounds(75, 400, 600, 200);
+        scrollPane.setBounds(75, 400, 600, 225);
         scrollPane.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
 
         pBook.add(lSearch);
@@ -65,22 +71,22 @@ public class ViewAdminBook extends JFrame {
         pBook.add(tfSearch);
         tfSearch.setBounds(130,350,350,20);
         pBook.add(tfTitle);
-        tfTitle.setBounds(130,115,350,20);
+        tfTitle.setBounds(150,115,350,20);
         pBook.add(tfAuthor);
-        tfAuthor.setBounds(130,150,350,20);
+        tfAuthor.setBounds(150,150,350,20);
         pBook.add(tfGenre);
-        tfGenre.setBounds(130,185,350,20);
+        tfGenre.setBounds(150,185,350,20);
         pBook.add(tfStock);
-        tfStock.setBounds(130,225,350,20);
+        tfStock.setBounds(150,225,350,20);
 
         pBook.add(bSearch);
         bSearch.setBounds(480,350,90,20);
         pBook.add(bRefresh);
         bRefresh.setBounds(570,350,100,20);
         pBook.add(bInsert);
-        bInsert.setBounds(100,280,90,20);
+        bInsert.setBounds(200,280,90,20);
         pBook.add(bReset);
-        bReset.setBounds(400,280,90,20);
+        bReset.setBounds(340,280,90,20);
 
     }
     public  String getTitle(){

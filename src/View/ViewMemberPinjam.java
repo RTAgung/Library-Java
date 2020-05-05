@@ -6,12 +6,12 @@ import java.awt.*;
 
 public class ViewMemberPinjam extends JFrame {
     Font font = new Font(Font.MONOSPACED, Font.BOLD, 45);//membuat font
-    Font font1 = new Font(Font.MONOSPACED, Font.BOLD, 17);
+    Font font1 = new Font(Font.MONOSPACED, Font.BOLD, 20);
 
     public JPanel pPinjam = new JPanel();
 
     JLabel lJudulHome = new JLabel("Buku Pinjam");
-    JLabel lJudul1 = new JLabel("Klik Buku yang ingin di pinjam");
+    JLabel lJudul1 = new JLabel("Klik pada tabel Buku yang ingin dipinjam");
 
     JLabel lSearch = new JLabel("SEARCH");
     public JTextField tfSearch = new JTextField();
@@ -35,14 +35,15 @@ public class ViewMemberPinjam extends JFrame {
 
         lJudulHome.setFont(font);
         pPinjam.add(lJudulHome);
-        lJudulHome.setBounds(40, 40, 500, 50);
+        lJudulHome.setBounds(40, 60, 500, 50);
 
         lJudul1.setFont(font1);
         pPinjam.add(lJudul1);
-        lJudul1.setBounds(80, 80, 500,50);
+        //lJudul1.setBounds(80, 80, 500,50);
+        lJudul1.setBounds(80, 140, 600,50);
 
         pPinjam.add(scrollPane);
-        scrollPane.setBounds(75, 300, 600, 200);
+        scrollPane.setBounds(75, 250, 600, 400);
         scrollPane.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
 
         pPinjam.add(lSearch);

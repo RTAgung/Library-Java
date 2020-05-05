@@ -7,6 +7,8 @@ import Main.Member;
 
 import javax.swing.*;
 
+import static java.awt.Color.red;
+
 public class ViewMenuMember extends JFrame {
     Member member;
 
@@ -43,6 +45,8 @@ public class ViewMenuMember extends JFrame {
         reset();
 
         mvcMemberHome.viewMemberHome.pHome.setVisible(true);
+
+        bLogout.setBackground(red);
 
         bHome.setBounds(260,10,90,20);
         bPinjam.setBounds(360,10,90,20);

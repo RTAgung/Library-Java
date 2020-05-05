@@ -6,6 +6,9 @@ import Main.MVCAdminMember;
 
 import javax.swing.*;
 
+import static java.awt.Color.red;
+import static java.awt.Color.yellow;
+
 public class ViewMenuAdmin extends JFrame{
 
     public MVCAdminMember mvcAdminMember = new MVCAdminMember();
@@ -36,6 +39,8 @@ public class ViewMenuAdmin extends JFrame{
         reset();
 
         mvcAdminMember.viewAdminMember.pMember.setVisible(true);
+
+        bLogout.setBackground(red);
 
         bMember.setBounds(260,10,90,20);
         bBook.setBounds(360,10,90,20);

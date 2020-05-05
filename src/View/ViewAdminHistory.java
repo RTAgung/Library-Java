@@ -6,7 +6,7 @@ import java.awt.*;
 
 public class ViewAdminHistory extends JFrame {
     Font font = new Font(Font.MONOSPACED, Font.BOLD, 45);//membuat font
-    Font font1 = new Font(Font.MONOSPACED, Font.BOLD, 17);
+    Font font1 = new Font(Font.MONOSPACED, Font.BOLD, 20);
 
     public JPanel pHistory = new JPanel();
 
@@ -35,14 +35,14 @@ public class ViewAdminHistory extends JFrame {
 
         lJudulHome.setFont(font);
         pHistory.add(lJudulHome);
-        lJudulHome.setBounds(40, 40, 500, 50);
+        lJudulHome.setBounds(40, 50, 500, 50);
 
         lJudul1.setFont(font1);
         pHistory.add(lJudul1);
         lJudul1.setBounds(80, 80, 600,100);
 
         pHistory.add(scrollPane);
-        scrollPane.setBounds(75, 300, 600, 200);
+        scrollPane.setBounds(75, 250, 600, 400);
         scrollPane.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
 
         pHistory.add(lSearch);

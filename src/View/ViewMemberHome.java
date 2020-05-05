@@ -19,6 +19,9 @@ public class ViewMemberHome extends JFrame {
     JLabel lBawahJudul = new JLabel("Disini kita membaca dengan senang hati!");
     JLabel lSambutan = new JLabel("");
     JLabel lSelamat = new JLabel("Selamat Datang Di");
+    JLabel lbawah1 = new JLabel("Developed By");
+    JLabel lbawah2 = new JLabel("Rama Tri Agung & Auliyaa Hanifah");
+    JLabel lbawah3 = new JLabel("Copyright 2021 All Rights Reserved");
 
 
     public ViewMemberHome(Member member){
@@ -32,17 +35,24 @@ public class ViewMemberHome extends JFrame {
         lSambutan.setBounds(40,60,500,30);
 
         lSelamat.setFont(font);
-        lSelamat.setBounds(40,90,500,30);
+        lSelamat.setBounds(40,125,500,30);
 
         lJudulHome.setFont(font1);
-        lJudulHome.setBounds(40, 120, 300, 50);
+        lJudulHome.setBounds(40, 150, 300, 50);
 
         lBawahJudul.setFont(font);
-        lBawahJudul.setBounds(40, 170, 500, 30);
+        lBawahJudul.setBounds(40, 200, 500, 30);
+
+        lbawah1.setBounds(40,580,600,30);
+        lbawah2.setBounds(40,600,600,30);
+        lbawah3.setBounds(40,620,600,30);
 
         pHome.add(lSambutan);
         pHome.add(lSelamat);
         pHome.add(lBawahJudul);
         pHome.add(lJudulHome);
+        pHome.add(lbawah1);
+        pHome.add(lbawah2);
+        pHome.add(lbawah3);
     }
 }

@@ -55,6 +55,11 @@ public class ControllerAdminBook implements ActionListener {
                             JOptionPane.showMessageDialog(null, bookTitle + " Berhasil Dihapus");
                     }
                 }
+
+                UIManager.put("OptionPane.cancelButtonText", "Cancel");
+                UIManager.put("OptionPane.noButtonText", "No");
+                UIManager.put("OptionPane.yesButtonText", "Yes");
+
                 refreshTable();
             }
         });

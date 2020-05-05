@@ -6,12 +6,12 @@ package View;
 
 public class ViewMemberKembali extends JFrame {
     Font font = new Font(Font.MONOSPACED, Font.BOLD, 45);//membuat font
-    Font font1 = new Font(Font.MONOSPACED, Font.BOLD, 17);
+    Font font1 = new Font(Font.MONOSPACED, Font.BOLD, 20);
 
     public JPanel pKembali = new JPanel();
 
     JLabel lJudulHome = new JLabel("Buku Kembali");
-    JLabel lJudul1 = new JLabel("Klik Buku yang ingin di kembalikan");
+    JLabel lJudul1 = new JLabel("Klik pada tabel Buku yang ingin dikembalikan");
 
     JLabel lSearch = new JLabel("SEARCH");
     public JTextField tfSearch = new JTextField();
@@ -35,14 +35,15 @@ public class ViewMemberKembali extends JFrame {
 
         lJudulHome.setFont(font);
         pKembali.add(lJudulHome);
-        lJudulHome.setBounds(40, 40, 500, 50);
+        lJudulHome.setBounds(40, 60, 500, 50);
 
         lJudul1.setFont(font1);
         pKembali.add(lJudul1);
-        lJudul1.setBounds(80, 80, 500,50);
+        //lJudul1.setBounds(80, 80, 500,50);
+        lJudul1.setBounds(80, 140, 600,50);
 
         pKembali.add(scrollPane);
-        scrollPane.setBounds(75, 300, 600, 200);
+        scrollPane.setBounds(75, 250, 600, 400);
         scrollPane.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
 
         pKembali.add(lSearch);

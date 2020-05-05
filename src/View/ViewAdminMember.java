@@ -6,10 +6,12 @@ import java.awt.*;
 
 public class ViewAdminMember extends JFrame {
     Font font1 = new Font(Font.MONOSPACED, Font.BOLD, 45);//membuat font
+    Font font2 = new Font(Font.MONOSPACED, Font.BOLD, 17);
 
     public JPanel pMember = new JPanel();
 
     JLabel lJudulHome = new JLabel("Member");
+    JLabel lJudul1 = new JLabel("NB: Klik Tabel Yang Dicari Jika ingin Update/Delete ");
 
     JLabel lEmail = new JLabel("Email");
     public JTextField tfEmail = new JTextField();
@@ -48,10 +50,14 @@ public class ViewAdminMember extends JFrame {
 
         lJudulHome.setFont(font1);
         pMember.add(lJudulHome);
-        lJudulHome.setBounds(40, 40, 300, 50);
+        lJudulHome.setBounds(40, 50, 300, 50);
+
+        lJudul1.setFont(font2);
+        pMember.add(lJudul1);
+        lJudul1.setBounds(75, 625, 600, 50);
 
         pMember.add(scrollPane);
-        scrollPane.setBounds(75, 400, 600, 200);
+        scrollPane.setBounds(75, 400, 600, 225);
         scrollPane.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
 
         pMember.add(lSearch);
