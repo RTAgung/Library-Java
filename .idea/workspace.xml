@@ -5,26 +5,15 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Library/Controller/ControllerAdminBook$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Library/Controller/ControllerAdminBook$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Library/Controller/ControllerAdminBook.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Library/Controller/ControllerAdminBook.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Library/View/ViewAdminBook.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Library/View/ViewAdminBook.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Library/View/ViewAdminHistory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Library/View/ViewAdminHistory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Library/View/ViewAdminMember.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Library/View/ViewAdminMember.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Library/View/ViewLogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Library/View/ViewLogin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Library/View/ViewMemberHome.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Library/View/ViewMemberHome.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Library/View/ViewMemberKembali.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Library/View/ViewMemberKembali.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Library/View/ViewMemberPinjam.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Library/View/ViewMemberPinjam.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Library/View/ViewMenuAdmin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Library/View/ViewMenuAdmin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Library/View/ViewMenuMember.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Library/View/ViewMenuMember.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Library/Model/ModelAdminBook.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Library/Model/ModelAdminBook.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Library/Model/ModelAdminMember.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Library/Model/ModelAdminMember.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Library/Model/ModelMemberPinjam.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Library/Model/ModelMemberPinjam.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/ControllerAdminBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ControllerAdminBook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ControllerSignIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ControllerSignIn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/ViewAdminBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/ViewAdminBook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/ViewAdminHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/ViewAdminHistory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/ViewAdminMember.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/ViewAdminMember.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/ViewLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/ViewLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/ViewMemberHome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/ViewMemberHome.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/ViewMemberKembali.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/ViewMemberKembali.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/ViewMemberPinjam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/ViewMemberPinjam.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/ViewMenuAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/ViewMenuAdmin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/ViewMenuMember.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/ViewMenuMember.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ControllerAdminMember.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ControllerAdminMember.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/ModelAdminBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/ModelAdminBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/ModelAdminMember.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/ModelAdminMember.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/ModelMemberPinjam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/ModelMemberPinjam.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +47,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Library" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -107,38 +96,42 @@
       <screen x="0" y="0" width="1536" height="832" />
     </state>
     <state x="201" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.832@0.0.1536.832" timestamp="1588395444903" />
-    <state x="499" y="113" key="FileChooserDialogImpl" timestamp="1588339599496">
+    <state x="499" y="113" key="FileChooserDialogImpl" timestamp="1589162342632">
       <screen x="0" y="0" width="1536" height="832" />
     </state>
-    <state x="499" y="113" key="FileChooserDialogImpl/0.0.1536.832@0.0.1536.832" timestamp="1588339599496" />
-    <state width="1493" height="123" key="GridCell.Tab.0.bottom" timestamp="1588674851342">
+    <state x="499" y="113" key="FileChooserDialogImpl/0.0.1536.832@0.0.1536.832" timestamp="1589162342632" />
+    <state width="1483" height="-5" key="GridCell.Tab.0.bottom" timestamp="1589428363988">
       <screen x="0" y="0" width="1536" height="832" />
     </state>
-    <state width="1493" height="123" key="GridCell.Tab.0.bottom/0.0.1536.832@0.0.1536.832" timestamp="1588674851342" />
-    <state width="1493" height="123" key="GridCell.Tab.0.center" timestamp="1588674851342">
+    <state width="1483" height="-5" key="GridCell.Tab.0.bottom/0.0.1536.832@0.0.1536.832" timestamp="1589428363988" />
+    <state width="1483" height="-5" key="GridCell.Tab.0.center" timestamp="1589428363988">
       <screen x="0" y="0" width="1536" height="832" />
     </state>
-    <state width="1493" height="123" key="GridCell.Tab.0.center/0.0.1536.832@0.0.1536.832" timestamp="1588674851342" />
-    <state width="1493" height="123" key="GridCell.Tab.0.left" timestamp="1588674851342">
+    <state width="1483" height="-5" key="GridCell.Tab.0.center/0.0.1536.832@0.0.1536.832" timestamp="1589428363988" />
+    <state width="1483" height="-5" key="GridCell.Tab.0.left" timestamp="1589428363988">
       <screen x="0" y="0" width="1536" height="832" />
     </state>
-    <state width="1493" height="123" key="GridCell.Tab.0.left/0.0.1536.832@0.0.1536.832" timestamp="1588674851342" />
-    <state width="1493" height="123" key="GridCell.Tab.0.right" timestamp="1588674851342">
+    <state width="1483" height="-5" key="GridCell.Tab.0.left/0.0.1536.832@0.0.1536.832" timestamp="1589428363988" />
+    <state width="1483" height="-5" key="GridCell.Tab.0.right" timestamp="1589428363988">
       <screen x="0" y="0" width="1536" height="832" />
     </state>
-    <state width="1493" height="123" key="GridCell.Tab.0.right/0.0.1536.832@0.0.1536.832" timestamp="1588674851342" />
-    <state x="162" y="118" key="SettingsEditor" timestamp="1588415749299">
+    <state width="1483" height="-5" key="GridCell.Tab.0.right/0.0.1536.832@0.0.1536.832" timestamp="1589428363988" />
+    <state x="162" y="118" key="SettingsEditor" timestamp="1589426793381">
       <screen x="0" y="0" width="1536" height="832" />
     </state>
-    <state x="162" y="118" key="SettingsEditor/0.0.1536.832@0.0.1536.832" timestamp="1588415749299" />
-    <state x="379" y="198" key="com.intellij.ide.util.TipDialog" timestamp="1588568157941">
+    <state x="162" y="118" key="SettingsEditor/0.0.1536.832@0.0.1536.832" timestamp="1589426793381" />
+    <state x="379" y="198" key="com.intellij.ide.util.TipDialog" timestamp="1589426755341">
       <screen x="0" y="0" width="1536" height="832" />
     </state>
-    <state x="379" y="198" key="com.intellij.ide.util.TipDialog/0.0.1536.832@0.0.1536.832" timestamp="1588568157941" />
+    <state x="379" y="198" key="com.intellij.ide.util.TipDialog/0.0.1536.832@0.0.1536.832" timestamp="1589426755341" />
     <state x="423" y="289" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1588046845298">
       <screen x="0" y="0" width="1536" height="832" />
     </state>
     <state x="423" y="289" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1536.832@0.0.1536.832" timestamp="1588046845298" />
+    <state x="209" y="37" key="new project wizard" timestamp="1589162344056">
+      <screen x="0" y="0" width="1536" height="832" />
+    </state>
+    <state x="209" y="37" key="new project wizard/0.0.1536.832@0.0.1536.832" timestamp="1589162344056" />
     <state x="431" y="153" width="672" height="678" key="search.everywhere.popup" timestamp="1588477897586">
       <screen x="0" y="0" width="1536" height="832" />
     </state>
@@ -155,7 +148,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Controller/ControllerAdminBook.java</url>
-          <line>133</line>
+          <line>136</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>

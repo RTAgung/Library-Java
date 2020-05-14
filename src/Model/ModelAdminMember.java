@@ -47,11 +47,13 @@ public class ModelAdminMember {
         return data;
     }
 
-    public int updateMember(String email, String name, String noHp, String address, String password){
+    public int updateMember(String email, String name,
+                            String noHp, String address, String password){
         int result = 0;
         try {
             String query = "UPDATE members SET " +
-                    "Name = '" + name + "', NoHp = '" + noHp + "', Address = '" + address + "', Password = '" + password + "' " +
+                    "Name = '" + name + "', NoHp = '" + noHp + "', " +
+                    "Address = '" + address + "', Password = '" + password + "' " +
                     "WHERE Email = '" + email + "'";
             statement = Database.getConnection().createStatement();
             statement.executeUpdate(query);

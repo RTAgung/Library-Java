@@ -42,17 +42,20 @@ public class ControllerAdminBook implements ActionListener {
                 UIManager.put("OptionPane.noButtonText", "Delete");
                 UIManager.put("OptionPane.yesButtonText", "Update");
 
-                int option = JOptionPane.showConfirmDialog(null, "Update/Delete Buku " + bookTitle + " ?");
+                int option = JOptionPane.showConfirmDialog(null,
+                        "Update/Delete Buku " + bookTitle + " ?");
                 if (option == 0){
                     updateBook(bookId, bookTitle, author, genre, stock);
                 } else if (option == 1){
                     UIManager.put("OptionPane.noButtonText", "No");
                     UIManager.put("OptionPane.yesButtonText", "Yes");
-                    int deleteOption = JOptionPane.showConfirmDialog(null, "Apakah Anda Yakin ?",
+                    int deleteOption = JOptionPane.showConfirmDialog(null,
+                            "Apakah Anda Yakin ?",
                             "Delete " + bookTitle, JOptionPane.YES_NO_OPTION);
                     if (deleteOption == 0){
                         if (modelAdminBook.deleteBook(bookId) == 1)
-                            JOptionPane.showMessageDialog(null, bookTitle + " Berhasil Dihapus");
+                            JOptionPane.showMessageDialog(null,
+                                    bookTitle + " Berhasil Dihapus");
                     }
                 }
 
